@@ -432,7 +432,14 @@
   [data-theme="dark"] footer{ background: #0C0F12; }
   .footer-grid{ display:grid; gap: var(--space-m); grid-template-columns: 1fr; }
   @media (min-width: 50em){ .footer-grid{ grid-template-columns: 1.3fr 1fr 1fr; } }
-  footer .logo{ color: var(--bg); }
+  footer .logo{
+  color: #FFFFFF;
+  transition: color .2s ease;
+  }
+  footer .logo:hover,
+  footer .logo:focus-visible{
+  color: var(--horizon-deep);
+  }  
   footer .logo span{ color: rgba(237,238,231,.6); }
   footer p{ color: rgba(237,238,231,.72); max-width: 32ch; margin-top: var(--space-2xs); }
   footer h3{ font-family: var(--font-mono); font-size:.78rem; text-transform:uppercase; letter-spacing:.08em; color: rgba(237,238,231,.6); margin-bottom: var(--space-2xs); }
